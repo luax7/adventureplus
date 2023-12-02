@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "adventureplus",
+	"version": "${version}",
+	"name": "AdventurePlus",
+	"description": "A Mod that focus on travelling, who wants a house anyways",
+	"authors": [
+		"Luax7"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/adventureplus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.luax7.adventureplus.AdventurePlus"
+		],
+		"fabric-datagen": [
+			"net.luax7.adventureplus.AdventurePlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"adventureplus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": ">=1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
