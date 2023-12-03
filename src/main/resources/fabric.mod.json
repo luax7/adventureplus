@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.luax7.adventureplus.AdventurePlusDataGenerator"
+		],
+		"client": [
+			"net.luax7.adventureplus.AdventurePlusClientInitializer"
 		]
 	},
 	"mixins": [
