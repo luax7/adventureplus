@@ -2,6 +2,8 @@ package net.luax7.adventureplus;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.luax7.adventureplus.item.ModItemGroups;
+import net.luax7.adventureplus.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +22,8 @@ public class AdventurePlus implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
